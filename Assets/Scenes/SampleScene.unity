@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000004194ccf0
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -468,8 +468,8 @@ Transform:
   m_GameObject: {fileID: 774717034}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.5, y: -0.5196, z: 0}
-  m_LocalScale: {x: 1.0270826, y: 0.97900724, z: 1}
+  m_LocalPosition: {x: -4.5, y: -0.5196, z: 5}
+  m_LocalScale: {x: 1.0270826, y: 0.97900724, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -488,7 +488,6 @@ GameObject:
   - component: {fileID: 2108177252}
   - component: {fileID: 2108177258}
   - component: {fileID: 2108177257}
-  - component: {fileID: 2108177256}
   m_Layer: 0
   m_Name: JuanCarlos
   m_TagString: Untagged
@@ -612,7 +611,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -4507673053862114016, guid: 745cc20ae13218644b443e96c0c02bce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -633,25 +632,12 @@ Transform:
   m_GameObject: {fileID: 2108177251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.741, y: -0.144, z: 0}
+  m_LocalPosition: {x: -4.529, y: 0.101, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2108177256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108177251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb8d96cd7faeda747a574705ec9d1593, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 5
 --- !u!114 &2108177257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 5
+  prefabBala: {fileID: 837419020069469471, guid: 2f837b9bef4e2c341aa43eb7aca23eb0, type: 3}
 --- !u!95 &2108177258
 Animator:
   serializedVersion: 7

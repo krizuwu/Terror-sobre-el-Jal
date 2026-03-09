@@ -6,7 +6,7 @@ public class MovimientoJuanCarlos : MonoBehaviour
     private Animator anim;
     public float velocidad = 5f;
     private float horizontal;
-
+    public GameObject prefabBala;
     void Start()
     {
         // Conectamos el código con los componentes de JuanCarlos
@@ -32,6 +32,17 @@ public class MovimientoJuanCarlos : MonoBehaviour
         {
             // Lo pone en Idle si soltamos la tecla
             anim.SetBool("running", false);
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        { Vector2 direccionDisparo = (transform.localScale.x == 1) ? Vector2.right : Vector2.left;
+          Vector3 separacion = new Vector3(direccionDisparo.x * 1.5f, 0, 0); 
+          Vector3 posicionAparicion = transform.position + separacion;
+
+  
+            GameObject nuevaBala = Instantiate(prefabBala, posicionAparicion, Quaternion.identity);
+            nuevaBala.GetComponent<Bala>().AsignarDireccion(direccionDisparo);
         }
     }
 
