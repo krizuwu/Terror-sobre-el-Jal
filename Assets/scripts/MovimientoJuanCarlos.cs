@@ -38,7 +38,7 @@ public class MovimientoJuanCarlos : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Vector2 direccionDisparo = (transform.localScale.x == 1) ? Vector2.right : Vector2.left;
-            Vector3 separacion = new Vector3(direccionDisparo.x * 1.5f, 0, 0); 
+            Vector3 separacion = new Vector3(direccionDisparo.x * .2f, 0, 0); 
             Vector3 posicionAparicion = transform.position + separacion;
 
             GameObject nuevaBala = Instantiate(prefabBala, posicionAparicion, Quaternion.identity);
