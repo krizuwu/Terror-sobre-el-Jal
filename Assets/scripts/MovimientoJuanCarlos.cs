@@ -21,7 +21,7 @@ public class MovimientoJuanCarlos : MonoBehaviour
     void Update()
     {
         // 1. Movimiento Horizontal
-        horizontal = Input.GetAxisRaw("Horizontal");
+        horizontal = Input.GetAxisRaw("Horizontal"); // Movimiento con flechas de dirección
 
         if (horizontal != 0)
         {
