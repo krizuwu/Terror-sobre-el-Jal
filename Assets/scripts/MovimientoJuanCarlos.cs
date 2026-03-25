@@ -45,15 +45,16 @@ public class MovimientoJuanCarlos : MonoBehaviour
             nuevaBala.GetComponent<Bala>().AsignarDireccion(direccionDisparo);
         }
 
-        // 3. Detectar el suelo (Rayo invisible hacia abajo)
-     Debug.DrawRay(transform.position, Vector3.down * 1.0f, Color.red);
+    // 3. Detectar el suelo (Rayo invisible hacia abajo)
         if (Physics2D.Raycast(transform.position, Vector2.down, 1.0f))
         {
             enElSuelo = true;
+            anim.SetBool("jumping", false);
         }
         else
         {
             enElSuelo = false;
+            anim.SetBool("jumping", true); 
         }
 
         // 4. Salto (Tecla W o Flecha Arriba)
